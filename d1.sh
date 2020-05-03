@@ -6,7 +6,7 @@ salary=0;
 count=0;
 day=0
 twhours=0
-for (( count=0; count<=10; count++ ))
+while [ $twhours -le 100 ]
 do
 status=$(($RANDOM%2))
 whours=$(($RANDOM%10))
