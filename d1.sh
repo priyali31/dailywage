@@ -6,6 +6,7 @@ salary=0;
 count=0;
 day=0
 twhours=0;
+echo "Welcome to Wage Computation Program"
 while [ $twhours -le 100 ]
 do
 	status=$(($RANDOM%2))
@@ -33,14 +34,10 @@ do
 	esac
 done
 
-status=$(( $RANDOM%2 ));
-  if [ $status -eq $(( $ispresent )) ]
-  then  
-     
-     echo "employee is present";
-     
-  else  
-     echo "employee is absent";
-     
-  fi    
 
+
+function getTotalWorkingHours(){
+	echo "Total Working Hours : $twhours"
+}
+echo  "Final Salary(Rs.) : $salary"
+getTotalWorkingHours
